@@ -1,0 +1,111 @@
+*{
+    transition: 0.2s linear;
+}
+body{
+    background-color: rgb(90, 88, 88);
+    margin: 0;
+}
+.header{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 170px;
+    position: fixed;
+}
+section{
+    display: flex;
+}
+.clothes{
+    margin: 0 0 0 100px;
+    color: white;
+    /* background-color: coral; */
+    top: 180px;
+    position: fixed;
+    flex: 1;
+}
+.Best-clothes{
+    /* background-color: deeppink; */
+    height: 700px;
+    flex: 5;
+}
+.header .search-form{
+    position: absolute;
+    left: 400px;
+    bottom: 30px;
+}
+.header .search-icon{
+    position: absolute;
+    left: 365px;
+    bottom: 25px;
+}
+.header .cart{
+    position: absolute;
+    top: 100px;
+    right: 225px;
+}
+.header .person{
+    position: absolute;
+    top: 100px;
+    right: 175px;
+}
+.header .earth{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+a{    
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+.header .logo img{
+    position: relative;
+    left: 100px;
+    top: 100px;
+    height: 50px;
+    width: 100px;
+}
+footer{
+    background-color: rgb(110, 108, 108);
+    height: 200px;
+    width: 100%;
+    clear: both;
+    display: flex;
+}
+
+.cs-center{
+    flex: 2;    
+    /* border: red 3px solid; */
+    width: 100%;
+    margin: 0 0 0 300px;
+    color: white;
+    font-size: 12px;
+}
+.day-market{
+    flex: 2;
+    /* border: blue 3px solid; */
+    width: 100%;
+    margin: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+footer .day-market a{
+    display: inline-block;
+}
+
+footer .day-market a img{
+    height: 20px;
+    width: 20px;
+}
+
+footer .day-market div{
+
+}
+
+footer .day-market .insta-div{
+    height: 20px;
+    width: 20px;
+    margin-right: 200px;
+    margin-top: 20px;
+}

@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <style>
+        .idbox{
+            position: relative;
+            left: 700px;
+            top: 300px;
+        }
+        .idbox #idbox-input{
+            width: 400px;
+            height: 30px;
+            font-size: 12px;
+        }
+        .pwbox{
+            position: relative;
+            left: 700px;
+            top: 300px;
+        }
+        .pwbox #pwbox-input{
+            width: 400px;
+            height: 30px;
+            font-size: 12px;
+        }
+        .submit{
+            position: relative;
+            left: 1050px;
+            top: 300px;
+        }
+        .find-id{
+            position: relative;
+            left: 750px;
+            top: 283px;
+            font-size: 12px;
+        }
+        .find-pw{
+            position: relative;
+            left: 840px;
+            top: 268px;
+            font-size: 12px;
+        }
+        .join{
+            position: relative;
+            left: 700px;
+            top: 250px;
+            font-size: 12px;
+        }
+
+    </style>
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="{% static 'logo.jpg' %}">
+    </a> <!-- 왼쪽 위 로고 -->
+
+
+    <div class="search-icon">
+        <img src="{% static 'search-icon.png' %}" width="25px" height="25px">
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="검색하세요!">
+    </div> <!-- 검색창과 돋보기 아이콘 -->
+
+
+    <div class="cart">
+        <a href=""><img src="{% static 'cart.png' %}" alt=""width="25px"height="25px"></a>
+    </div>
+    <div class="person">
+        <a href=""><img src="{% static 'person.png' %}" alt=""width="25px"height="25px"></a>
+    </div>
+    <div class="earth">
+        <img src="{% static 'earth.png' %}" alt=""width="25px"height="25px">
+    </div>
+
+</header> <!-- header 영역 끝 -->
+
+<section>
+    <div class="clothes">
+    
+        <a href="ALL.html">ALL</a>
+        <a href="BEST.html">BEST</a>
+        <a href="OUTER.html">OUTER</a>
+        <a href="TOP.html">TOP</a>
+        <a href="BOTTOM.html">BOTTOM</a>
+        <a href="ACC.html">ACC</a>
+
+    </div><!-- 좌측 section 영역 끝 -->
+
+
+    <div class="Best-clothes"> 
+    <!-- 썸네일 사진을 어떻게 처리할지 -->
+        <div class="idbox">
+            <input type="text" placeholder="MEMBER ID" id="idbox-input">
+        </div> <br>
+        <div class="pwbox">
+            <input type="password" placeholder="PASSWORD" id="pwbox-input">
+        </div> <br>
+        <div class="submit">
+            <input type="submit" value="LOGIN">
+        </div>
+        <div class="find-id">
+            <a href="">FORGOT ID</a>
+        </div>
+        <div class="find-pw">
+            <a href="">FORGOT PW</a>
+        </div>
+        <div class="join">
+            <a href="">JOIN</a>
+        </div>
+    </div><!-- 우측 section 영역 끝 -->
+
+</section>
+<footer>
+    <div class="cs-center">
+    고객센터 <br>
+    010-1234-5678 <br>
+    평일 11:00-17:00 <br>
+    점심 12:00~13:00/ 주말 및 공휴일 휴무<br> <br>
+
+    은행정보 <br>
+    국민은행 000-0000000-0000 <br>
+    예금주 : 김재훈
+    </div>
+    <div class="day-market">
+
+        <div class="market-font">
+    요일마켓 <br>
+    대표이사 : 김재훈 이메일 : ggwogns@naver.com <br>
+    주소 : 서울특별시 종로구 청와대로 1  <br>
+    사업자등록번호 : 000-0000-0000[사업자정보확인] <br>
+    회사소개 이용약관 이용안내 개인정보방침
+        </div>
+        <div class="insta-div">
+            <a href="#" class="insta">
+                <img src="{% static 'instagram.png' %}">
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
