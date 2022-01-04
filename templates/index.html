@@ -12,8 +12,8 @@
 
 <header class="header">
 
-    <a href="index.html" class="logo">
-        <img src="{% static 'logo.jpg' %}">
+    <a href="{% url 'daily:index' %}" class="logo">
+        <img src="{% static 'logo.png' %}">
     </a> <!-- 왼쪽 위 로고 -->
 
 
@@ -30,7 +30,7 @@
         <a href=""><img src="{% static 'cart.png' %}" alt=""width="25px"height="25px"></a>
     </div>
     <div class="person">
-        <a href="login.html"><img src="{% static 'person.png' %}" alt=""width="25px"height="25px"></a>
+        <a href="{% url 'daily:login' %}"><img src="{% static 'person.png' %}" alt=""width="25px"height="25px"></a>
     </div>
     <div class="earth">
         <img src="{% static 'earth.png' %}" alt=""width="25px"height="25px">

@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+
+<body>
+
+<header class="header">
+
+    <a href="{% url 'daily:index' %}" class="logo">
+        <img src="{% static 'logo.png' %}">
+    </a> <!-- 왼쪽 위 로고 -->
+
+
+    <div class="search-icon">
+        <img src="{% static 'search-icon.png' %}" width="25px" height="25px">
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="검색하세요!">
+    </div> <!-- 검색창과 돋보기 아이콘 -->
+
+
+    <div class="cart">
+        <a href=""><img src="{% static 'cart.png' %}" alt=""width="25px"height="25px"></a>
+    </div>
+    <div class="person">
+        <a href="{% url 'daily:login' %}"><img src="{% static 'person.png' %}" alt=""width="25px"height="25px"></a>
+    </div>
+    <div class="earth">
+        <img src="{% static 'earth.png' %}" alt=""width="25px"height="25px">
+    </div><!-- 장바구니, 로그인, 언어 아이콘-->
+
+</header> <!-- header 영역 끝 -->
+
+<section>
+    <div id="body-wrapper">
+        <div class="clothes">
+        
+            <a href="ALL.html">ALL</a>
+            <a href="BEST.html">BEST</a>
+            <a href="OUTER.html">OUTER</a>
+            <a href="TOP.html">TOP</a>
+            <a href="BOTTOM.html">BOTTOM</a>
+            <a href="ACC.html">ACC</a>
+
+        </div><!-- 좌측 section 영역 끝 -->
+
+
+        <div class="Best-clothes"> 
+        <!-- 썸네일 사진을 어떻게 처리할지 -->
+
+        </div><!-- 우측 section 영역 끝 -->
+    <section class="mainjoin">
+        <div class="join">
+            <div class="join-text">
+                JOIN
+            </div><br>
+            
+            <div class="join-id">
+            아이디 <input type="text" class="inputtext" placeholder="아이디를 입력해주세요."><br><br>
+            (영문 소문자/숫자,4-16자) <br> <br>
+            </div>
+
+            <div class="join-pw">
+            비밀번호 <input type="password" class="inputtext" placeholder="암호를 입력해주세요."><br><br>
+            (영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자) <br><br>
+            </div>
+
+            <div class="join-pwchk">
+            비밀번호 확인 <input type="password" class="inputtext" placeholder="암호를 확인해주세요."> <br><br>
+            </div>
+
+            <div class="join-name">
+            이름 <input type="text" class="inputtext" placeholder="이름을 입력해주세요."> <br><br>
+            </div>
+
+            <div class="join-phonenum">
+            휴대전화번호 <input type="text"  class="inputtext" placeholder="010-1234-5678"><br><br>
+            </div>
+
+            <div class="join-SMS">
+            SMS 수신여부 <input type="checkbox">
+            동의함<br><br>
+            쇼핑몰에서 제공하는 유익한 이벤트 소식을 SMS로 받으실 수 있습니다.<br><br>
+            </div>
+
+            <div class="join-email">
+            이메일 <input type="text" class="inputtext" placeholder="email_id@email.com"> <br><br>
+            </div>
+
+            <div class="join-email-agreement">
+            이메일 수신여부 <input type="checkbox"> 동의함 <br><br>
+            쇼핑몰에서 제공하는 유익한 이벤트 소식을 이메일로 받으실 수 있습니다.<br><br>
+            </div>
+
+            <div class="join-join">
+            <input type="button" value="join">
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+</section>
+<footer>
+    <div class="cs-center">
+    고객센터 <br>
+    010-1234-5678 <br>
+    평일 11:00-17:00 <br>
+    점심 12:00~13:00/ 주말 및 공휴일 휴무<br> <br>
+
+    은행정보 <br>
+    국민은행 000-0000000-0000 <br>
+    예금주 : 김재훈
+    </div>
+    <div class="day-market">
+
+        <div class="market-font">
+    요일마켓 <br>
+    대표이사 : 김재훈 이메일 : ggwogns@naver.com <br>
+    주소 : 서울특별시 종로구 청와대로 1  <br>
+    사업자등록번호 : 000-0000-0000[사업자정보확인] <br>
+    회사소개 이용약관 이용안내 개인정보방침
+        </div>
+        <div class="insta-div">
+            <a href="#" class="insta">
+                <img src="{% static 'instagram.png' %}">
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
